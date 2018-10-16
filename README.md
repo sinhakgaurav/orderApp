@@ -3,10 +3,10 @@
 
 ## About
 - [Docker](https://www.docker.com/) as the container service to isolate the environment.
--[PHP](https://php.net) [Laravel](https://laravel.com) used as to develop backend API's. Laravel API structure is used for api configuration
--[MySQL] as the database layer to store executions.
--[NGINX](https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/) as a proxy / content-caching layer
--[PHPUnit](https://phpunit.de/) is used for unit testing
+- [PHP](https://php.net) [Laravel](https://laravel.com) used as to develop backend API's. Laravel API structure is used for api configuration
+- [MySQL] as the database layer to store executions.
+- [NGINX](https://docs.nginx.com/nginx/admin-guide/content-cache/content-caching/) as a proxy / content-caching layer
+- [PHPUnit](https://phpunit.de/) is used for unit testing
 
 ## How to Install & Run
 
@@ -41,4 +41,4 @@
 
 **routes**
 
--contains the api routing file.
+- contains the api routing file.
