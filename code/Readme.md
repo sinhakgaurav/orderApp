@@ -2,22 +2,14 @@ Application will be accessible on http://localhost:8080
 
 By default it will behave as a get request handler irrespective of the http request method and will show the list of top 10 orders
 
-you will find every system configuration related files under /system_files folder
-	deliveryorder.sql
-	general manual command to configure application on linux : readme_instructions.txt
-	virtualhost file : deliveryorder.com.conf
+you will find every system configuration related files under /config folder
+	Google Access token : API_KEY_GOOGLE is created in constants file in config folder
 
-We have a auth module under /app/modules/auth to be used for authentication explicitly using any kind of client library or our own custom authentication
+Implemented Token based API authorization 
 
-We have a config variable under /app/bootstrap.php for:
-    allowed http request methods : $_ENV['allowedRequest']
-    order status : $_ENV['orderStatusArray']
-    not required indexes in the request body(for processing the request on controller) : $_ENV['not_required']
+Routing paths are written in routes api.php along with before call middleware class implementation that checks the api header token authorization 
     
-We have a .env file under /app/config folder having
-	for putting bypassing token authentication : BYPASS_TOKEN
-        Auth token key : TOKEN
+We have a .env file under at root of code folder having
 	DB Authentication details
-	Google Access token : API_KEY_GOOGLE
 
 token is required to be placed in header of the request 
