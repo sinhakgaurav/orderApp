@@ -19,7 +19,7 @@
 
 1. You can run `docker-compose up` from terminal
 2. Server is accessible at `http://localhost:8080`
-3. Run manual testcase suite by `npm test app/test`
+3. Run manual testcase suite by `\vendor\bin\phpunit tests\Feature\OrderControllerTest.php`
 
 ## How to Run Tests (Explicity from cli)
 **Use following command to run PHPUnit test cases:**
