@@ -19,7 +19,7 @@ sudo systemctl enable docker
 sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
-sudo docker-compose down && docker-compose up -d
+sudo docker-compose down && docker-compose up --force-recreate && docker-compose up -d
 
 sudo sleep 100s #this line is included for composer to finish the dependency installation so that test case can execute without error.
 
